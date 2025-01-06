@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:crafter",
+      "count": 1
+    },
+    "title": "You crafted the uncraftable",
+    "description": "You won NoCraft",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "crafter": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:crafter"
+      },
+      "item": {
+        "items": [
+          "minecraft:crafter"
+        ]
+      }
+    }
+  }
+}
